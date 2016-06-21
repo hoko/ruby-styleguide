@@ -989,6 +989,7 @@ supposed to help risks not getting used at all &ndash; no matter how good it is.
       self.worker.update(self.content, self.options)
       self.status = :in_progress
     end
+    
     self.status == :verified
   end
 
@@ -998,6 +999,7 @@ supposed to help risks not getting used at all &ndash; no matter how good it is.
       worker.update(content, options)
       self.status = :in_progress
     end
+    
     status == :verified
   end
   ```
