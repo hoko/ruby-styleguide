@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'db/**/*'
+    - 'config/unicorn/*'
+    - 'bin/*'
+
+# Configuration parameters: AllowURI, URISchemes.
+Metrics/LineLength:
+  Max: 100
+
+# Configuration parameters: Exclude.
+Style/Documentation:
+  Enabled: false
+
+# Dumb rubocop is dumb
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Our methods can be a little bit complex
+Metrics/AbcSize:
+  Max: 20
